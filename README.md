@@ -6,9 +6,9 @@ Le Proxy Pattern est un concept qui a pour but de rendre les smart contracts év
 
 ## Les contrats
 
-- **Proxy Contract**: Sert de façade pour router les appels vers des implémentations spécifiques de contrats, permettant le changement de logique sous-jacente sans modifier l'adresse du contrat.
-- **Logic Contracts (ContractV1 et ContractV2)**: Implémentent la logique métier du contrat, qui peut être mise à jour ou remplacée au fil du temps.
-- **Eternal Storage**: Un contrat de stockage qui sépare les données de la logique métier du contrat, ce qui permet d'assurer que le stockage est maintenu à travers les différentes version.
+- **Proxy Contract**: Agit comme une façade vers le smart contract contenant le code à exécuter. La façade ne change pas, mais il est possible de déployer des nouvelles versions de l'implémentation et de connecter le proxy à la version souhaitée.
+- **Eternal Storage**: Sépare les données de la logique métier du contrat, ce qui permet d'assurer que le stockage est maintenu à travers les différentes version. Quand nous déployons une nouvelle version de la logique métier, le même contrat de stockage peut être utilisé, ce qui permet de conserver les données de version en version.
+- **Contrats de logique métier (ContractV1 et ContractV2)**: Implémentent la logique métier du contrat, qui peut être mise à jour ou remplacée au fil du temps.
 
 ## Installation
 
