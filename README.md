@@ -1,4 +1,4 @@
-> Ce projet illustre une version simplifiée du Proxy Pattern en Solidity, avec l'utilisation du Eternel Storage Pattern pour s'assurer que les données des contrats restent accessibles et modifiables à travers différentes versions.
+> Ce projet illustre une version simplifiée du pattern Proxy en Solidity, avec le pattern Eternel Storage Pattern pour s'assurer que les données des contrats restent accessibles et modifiables à travers différentes versions.
 
 ## Présentation
 
